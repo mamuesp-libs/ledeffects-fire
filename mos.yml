@@ -1,0 +1,24 @@
+author: M.Mueller-Spaeth "mamuesp" <fms1961@gmail.com>
+type: lib
+description: A rotating rainbow column with RGB LEDs
+version: 1.0
+
+sources:
+  - src
+
+filesystem:
+  - fs
+
+config_schema:
+  - ["ledeffects.fire","o", {title: ""}] 
+  - ["ledeffects.fire.timeout", "i", 15, {title: ""}]
+  - ["ledeffects.fire.cooling", "i", 55, {title: ""}]
+  - ["ledeffects.fire.sparkling", "i", 120, {title: ""}]
+  - ["ledeffects.fire.dim_all", "d", 0.33, {title: "Dimming of the LED over all colors"}]
+  
+libs:
+
+tags:
+  - c
+
+manifest_version: 2017-09-29
