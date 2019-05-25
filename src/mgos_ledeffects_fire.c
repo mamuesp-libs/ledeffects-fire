@@ -108,7 +108,7 @@ void mgos_ledeffects_fire(void* param, mgos_rgbleds_action action)
 }
 
 
-bool mgos_fire_init(void) {
+bool mgos_ledeffects_fire_init(void) {
   LOG(LL_INFO, ("mgos_fire_init ..."));
   ledmaster_add_effect("ANIM_FIRE", mgos_ledeffects_fire);
   return true;
