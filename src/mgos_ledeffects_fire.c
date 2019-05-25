@@ -28,7 +28,7 @@ static void mgos_intern_set_pixel_heat_color(mgos_rgbleds* leds, int x, int y, u
         curr_pix.g = 0;
         curr_pix.b = 0;
     }
-    mgos_rgbleds_plot_pixel(leds, x, leds->panel_height - 1 - y, curr_pix, false);
+    mgos_universal_led_plot_pixel(leds, x, leds->panel_height - 1 - y, curr_pix, false);
 }
 
 static void mgos_intern_fire_init(mgos_rgbleds* leds)
@@ -78,7 +78,7 @@ static void mgos_intern_fire_loop(mgos_rgbleds* leds)
                 mgos_intern_set_pixel_heat_color(leds, x_pos, tgRunner, heat[tgRunner]);
             }
         }
-        mgos_rgbleds_show(leds);
+        mgos_universal_led_show(leds);
         mgos_wdt_feed();
     }
 }
